@@ -1,0 +1,19 @@
+<div class="form-container absolute-center border-shadow">
+    <form class="example-form" #event="ngForm" (ngSubmit)="addEvent(event.value)">
+        <legend>Register Your Event</legend>
+
+        <label for="eventTitle">Event Name </label>
+        <input class="required" type="email" placeholder="User Name" id="eventTitle" name="eventTitle" ngModel required>
+
+        <label for="eventTime">Event Time </label>
+        <input class="required" type="time" id="eventTime" name="eventTime" ngModel required>
+
+        <label for="formDate">From</label>
+        <input class="required" type="date" id="formDate" name="formDate" ngModel required>
+
+        <label for="toDate">To</label>
+        <input class="required" type="date" id="toDate" name="toDate" ngModel required>
+
+        <button class="bg-primary text-white" mat-raised-button>Submit</button>
+    </form>
+</div>

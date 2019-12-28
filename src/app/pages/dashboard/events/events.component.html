@@ -1,0 +1,59 @@
+<main class="main-content">
+    <div class="filter-wrapper">
+        <div class="tab-filter">
+            <ul class="filters">
+                <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+                <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Option 1</a></li>
+                <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Option 2</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="filter-sidebar">
+        <form>
+            <div class="filter-block">
+                <h4>Search</h4>
+
+                <div class="filter-content">
+                    <input type="search" placeholder="Search....">
+                </div>
+            </div>
+        </form>
+
+        <a href="#0" class="close">Close</a>
+    </div>
+
+    <section class="events-gallery">
+        <ul class="events events-container">
+
+            <li class="event" *ngFor="let event of events">
+                <div class="top-content">
+                    <img src="assets/img/events/item-1.jpg" />
+                    <div class="event-infos absolute-center">
+                        <span class="event-name">{{event.eventTitle}}</span>
+                        <span class="event-info">@{{event.fromDate}}</span>
+                        <span class="event-info">@{{event.eventTime}}</span>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="stats absolute-center">
+                        <div class="event-stats">
+                            <strong>Participated</strong>
+                            <span>1,337</span>
+                        </div>
+                        <div class="event-stats">
+                            <strong>Spots</strong>
+                            <span>561</span>
+                        </div>
+                        <div class="event-stats">
+                            <strong>Followers</strong>
+                            <span>718</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+</main>

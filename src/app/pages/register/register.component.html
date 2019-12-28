@@ -1,0 +1,13 @@
+<div class="login-container absolute-center border-shadow">
+    <div class="example-form-image"></div>
+    <div class="example-form-content">
+        <form class="example-form" #signup="ngForm" (ngSubmit)="signupButton(signup.value)">
+            <legend>Sign-Up</legend>
+            <input class="required" type="text" placeholder="User Name" id="name" name="email" ngModel required>
+
+            <input class="required" type="password" placeholder="Password" id="password" name="password" ngModel required>
+
+            <button class="bg-primary text-white" mat-raised-button>Submit</button>
+        </form>
+    </div>
+</div>
